@@ -1,20 +1,35 @@
-body {
-  font-family: "Noto Sans JP", sans-serif;
-  background-color: #f6f5f4;
+* {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  height: 100px;
+  text-align: center;
+  margin-bottom: 10px;
+  background-color: lightcyan;
 }
 .side {
   background-color: #ff838b;
-  width: 100px;
-  height: 300px;
   text-align: center;
 }
 .content {
+  flex-grow: 1;
   background-color: #b3d874;
-  width: 250px;
-  height: 300px;
   text-align: center;
   margin-left: 10px; /*サイドバーとメインコンテンツの間に隙間をあけた*/
 }
+main {
+  flex-direction: row;
+  flex-grow: 1;
+}
 article {
+  width: 100vw;
+  height: 100vh;
   display: flex; /*サイドバーとメインコンテンツを横並びにする指定をした*/
+}
+.footer {
+  height: 100px;
+  text-align: center;
+  margin-top: 10px;
+  background-color: rgb(239, 244, 135);
 }
